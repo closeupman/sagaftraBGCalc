@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+
+<div class="container">
+        <h2>Los Angeles SAG-AFTRA Background Pay App</h2>
+
+        <label for="baseRate">Base Rate (8 hours or less):</label>
+        <input type="number" id="baseRate" placeholder="216" /><br><br>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="wet" />
+          <label for="wet">Wet</label>
+
+        <input type="checkbox" id="smoke" />
+        <label for="smoke">Smoke</label>
+        </div>
+
+    <div class="checkbox-row">
+      <input type="checkbox" id="makeup" />
+      <label for="makeup">Makeup</label>
+
+      <input type="checkbox" id="beard" />
+      <label for="beard">Beard</label>
+
+      <input type="checkbox" id="hairGoods" />
+      <label for="hairGoods">Hair Goods</label>
+    </div>
+  
+          <label for="startHours">Start Time:</label>
+        <div class = "time-row">
+        <select id="startHours"></select>
+        <select id="startMinutes"></select>
+        <select id="startAmPm"><option value="am">AM</option><option value="pm">PM</option></select><br><br>
+        </div>
+
+         <label for="lunchMinutes">Lunch Break:</label>
+        <select id="lunchMinutes"></select> 
+
+         <label for="endHours">End Time:</label>
+         <div class = "time-row">
+        <select id="endHours"></select>
+        <select id="endMinutes"></select>
+        <select id="endAmPm"><option value="am">AM</option><option value="pm">PM</option></select><br><br>
+       </div>
+        <label for="mealPenalties">Meal Penalties:</label>
+        <input type="number" id="mealPenalties" value="0" min="0" /><br><br> 
+        <button id="calculateBtn" onclick="calculateWage()">Calculate</button>
+<div id="result"></div> 
+
+</body>
+</html>
